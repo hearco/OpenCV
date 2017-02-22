@@ -26,6 +26,7 @@ int main(int argc,char* argv[])
   
   while(!waitKey(0))
   {
+    cap >> input;
     RGB2YIQ(input, createdYIQ);
     imshow("YIQ", createdYIQ);
   }
